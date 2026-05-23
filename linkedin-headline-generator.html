@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LinkedIn Headline Generator Free | NextRole AI</title>
+
+<meta name="description" content="Free LinkedIn headline generator for students and freshers. Create professional LinkedIn headlines instantly using AI-style templates.">
+
+<style>
+body{
+  font-family: Arial;
+  background:#0f172a;
+  color:white;
+  max-width:900px;
+  margin:auto;
+  padding:40px;
+  line-height:1.7;
+}
+
+h1,h2{
+  color:#60a5fa;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  border:none;
+  margin-top:10px;
+}
+
+button{
+  background:#3b82f6;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  margin-top:15px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:12px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>LinkedIn Headline Generator</h1>
+
+<p>
+Create a professional LinkedIn headline in seconds. Just enter your role below.
+</p>
+
+<input type="text" id="role" placeholder="Enter your role (e.g. Java Developer)">
+
+<br>
+
+<button onclick="generate()">Generate Headline</button>
+
+<div class="card" id="result" style="display:none;"></div>
+
+<script>
+function generate(){
+    let role = document.getElementById("role").value;
+
+    if(role.trim() === ""){
+        alert("Please enter your role");
+        return;
+    }
+
+    let output =
+    "Aspiring " + role +
+    " | Problem Solver | Passionate Learner | Open to Opportunities";
+
+    document.getElementById("result").style.display = "block";
+    document.getElementById("result").innerHTML = "<h2>" + output + "</h2>";
+}
+</script>
+
+</body>
+</html>
