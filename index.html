@@ -144,37 +144,6 @@ Privacy Policy
   </section>
 
   <section class="section">
-  <h2>LinkedIn Headline Generator</h2>
-
-  <input
-    type="text"
-    id="role"
-    placeholder="Enter your role (Example: Java Developer)"
-    style="padding:12px;width:100%;max-width:500px;border-radius:8px;border:none;margin-top:15px;"
-  />
-
-  <button onclick="generateHeadline()">
-    Generate Headline
-  </button>
-
-  <h3 id="output" style="margin-top:20px;"></h3>
-</section>
-
-<script>
-  function generateHeadline() {
-    const role = document.getElementById("role").value;
-
-    if(role.trim() === "") {
-      document.getElementById("output").innerText =
-        "Please enter a role.";
-      return;
-    }
-
-    document.getElementById("output").innerText =
-      "Aspiring " + role +
-      " | Problem Solver | Passionate Learner | Open to Opportunities";
-  }
-</script>
   
   <footer>
     <p>© 2026 NextRole AI. All rights reserved.</p>
